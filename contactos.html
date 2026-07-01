@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Contacto | Colegio Santamaría</title>
+    <link rel="stylesheet" href="css/estilo_contacto.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo del Colegio Santamaría" class="logo">
+                <h2>Colegio Santamaría</h2>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu"><a href="nosotros.html">Nosotros &#9662;</a>
+                    <ul class="submenu-items">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="mision.html">Misión</a></li>
+                        <li><a href="vision.html">Visión</a></li>
+                        <li><a href="instalaciones.html">Instalaciones</a></li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="programas_academicos.html">Programas Académicos &#9662;</a>
+                    <ul class="submenu-items">
+                        <li><a href="preescolar.html">Preescolar</a></li>
+                        <li><a href="primaria.html">Primaria</a></li>
+                        <li><a href="bachillerato.html">Bachillerato</a></li>
+                    </ul>
+                </li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+            <button class="Boton-Admisiones">Admisiones</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-nivel">
+            <h1>Contacto</h1>
+            <p>Escríbenos para más información sobre nuestro proceso de admisiones.</p>
+
+            <form action="#" method="POST" class="formulario-contacto">
+                <h2>Datos Personales</h2>
+                <div class="grupo-campo">
+                    <input type="text" placeholder="Nombres" required>
+                    <input type="text" placeholder="Apellidos" required>
+                </div>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="tel" placeholder="Teléfono">
+
+                <h3>Información Académica</h3>
+                <select required>
+                    <option value="">Seleccione programa de interés</option>
+                    <option value="preescolar">Preescolar</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="bachillerato">Bachillerato</option>
+                </select>
+
+                <textarea placeholder="Escribe aquí tu mensaje..." rows="5"></textarea>
+
+                <div class="botones">
+                    <button type="submit" class="Boton-Admisiones">Enviar Mensaje</button>
+                    <button type="reset" class="Boton-Limpiar">Limpiar</button>
+                </div>
+            </form>
+
+            <h3 style="margin-top: 40px;">Nuestra Ubicación</h3>
+            <div class="mapa-contenedor">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7942.447316830404!2d-73.36209645!3d5.53380725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2c68b0d523%3A0xd475cff9fbd620fb!2zQ2VudHJvIEhpc3TDs3JpY28sIFR1bmphLCBCb3lhY8Oh!5e0!3m2!1ses!2sco!4v1781807008750!5m2!1ses!2sco" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="sitio-footer">
+    <div class="footer-contenedor">
+        
+        <div class="footer-columna">
+            <h4>Enlaces rápidos</h4>
+            <ul>
+                <li><a href="#menu">Inicio</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Oferta académica</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Admisiones</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h4>Oferta académica</h4>
+            <ul>
+                <li><a href="#">Inicial</a></li>
+                <li><a href="#">Primaria</a></li>
+                <li><a href="#">Secundaria</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h4>Información</h4>
+            <ul>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Calendario</a></li>
+                <li><a href="#">Reglamento</a></li>
+                <li><a href="#">Manual de convivencia</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h4>Contacto</h4>
+            <p class="contacto-texto">
+                Av. Norte No. 15-45<br>
+                Tunja, Boyacá, Colombia<br>
+                (608) 740 1234<br>
+                <a href="mailto:info@colegiosantamaria.edu.co">info@colegiosantamaria.edu.co</a>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer-creditos">
+        <p>&copy; 2026 Colegio Santamaría. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+

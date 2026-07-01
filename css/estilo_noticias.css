@@ -1,0 +1,232 @@
+/*==== Reset Basico ====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+}
+
+/*====Barra de Navegación====*/
+nav {
+   
+    background-color: #0f172a; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.menu {
+    list-style: none;    
+    display: flex;     
+    margin-left: 100px;
+}
+
+.menu a {
+
+    text-align: rig;
+     font-size: 15px;
+    display: block;      
+    color: #ffffff;    
+    text-decoration: none;
+    padding: 15px 20px;    
+}
+
+.menu a:hover {
+    background-color: #2e5597; /*Color al pasar el mouse */
+}
+
+/*====Submenu desplegable (solo CSS)====*/
+.menu li {
+    position: relative; /*Punto de referencia del submenu */
+}
+
+/* Ocultar submenús */
+.submenu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #698694;
+    min-width: 210px;
+    list-style: none;
+    z-index: 100;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.menu li:hover > .submenu-items {
+    display: block;
+}
+
+ul.submenu a {
+    padding: 12px 20px;   /*Espaciado interno del submenu */
+}
+
+ul.submenu a:hover {
+    background-color: #3f6bb5; /*Color al pasar el mouse por el submenu */
+}
+
+.submenu-items li {
+    width: 100%;
+}
+
+h2 {
+    color: #f5f5f5;
+    font-size: 20px;
+}
+
+.Boton-Admisiones {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* MAIN */
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Organiza los artículos en una cuadrícula flexible */
+.contenedor-noticias {
+    display: grid;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* Define el estilo de cada contenedor de noticia */
+.noticia {
+    border: 1px solid #070707;
+    padding: 60px;
+    border-radius: 10px;
+    background: #ffffff;
+    margin: 25px 25px 25px 25px;
+}
+
+/* Ajuste de imágenes para que sean uniformes */
+.noticia img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para la fecha para diferenciarla del texto */
+.noticia time {
+    display: block;
+    color: #64748b;
+    font-size: 0.9em;
+    margin: 5px 0 10px 0;
+    font-style: italic;
+}
+
+/* Estilo para el párrafo descriptivo */
+.noticia p {
+    line-height: 1.6;
+    color: #334155;
+}
+
+
+/* ===================================================
+   5. FINAL DE PÁGINA 
+   =================================================== */
+footer.sitio-footer {
+    background-color: #ffffff;
+    padding: 60px 0 20px 0;
+    border-top: 1px solid #e2e8f0;
+    width: 100%;
+    display: block;
+}
+
+/* Alinea las 4 columnas de forma horizontal */
+footer.sitio-footer .footer-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer.sitio-footer .footer-columna {
+    flex: 1;
+    display: block;
+}
+
+footer.sitio-footer .footer-columna h3 {
+    color: #1e293b;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+footer.sitio-footer .footer-columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer.sitio-footer .footer-columna ul li {
+    margin-bottom: 8px;
+}
+
+/* El display: block aquí es clave para que tome el max-width */
+footer.sitio-footer .footer-columna ul li a, 
+footer.sitio-footer .contacto-texto, 
+footer.sitio-footer .contacto-texto a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 100%; 
+    display: block; 
+}
+
+footer.sitio-footer .footer-columna ul li a:hover, 
+footer.sitio-footer .contacto-texto a:hover {
+    color: #b45309; 
+    text-decoration: underline;
+}
+
+/* Barra inferior de créditos */
+footer.sitio-footer .footer-creditos {
+    max-width: 1100px;
+    margin: 35px auto 0 auto;
+    padding-top: 15px;
+    border-top: 1px solid #f1f5f9;
+    text-align: center;
+}
+
+footer.sitio-footer .footer-creditos p {
+    margin: 0;
+    font-size: 11px;
+    color: #94a3b8;
+    max-width: 100%;
+} 
