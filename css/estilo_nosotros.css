@@ -178,83 +178,92 @@ html {
 .Tarjeta h2 { min-width: 80px; margin-right: 20px; }
 
 
-
 /* ===================================================
-   5. FINAL DE PÁGINA 
+   5. FINAL DE PÁGINA
    =================================================== */
-footer.sitio-footer {
-    background-color: #ffffff;
-    padding: 60px 0 20px 0;
-    border-top: 1px solid #e2e8f0;
-    width: 100%;
-    display: block;
+
+footer.sitio-footer{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    padding:70px 0 25px;
+    width:100%;
+    color:#e2e8f0;
+    border-top:4px solid #2563eb;
 }
 
-/* Alinea las 4 columnas de forma horizontal */
-footer.sitio-footer .footer-contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Contenedor */
+footer.sitio-footer .footer-contenedor{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
 }
 
-footer.sitio-footer .footer-columna {
-    flex: 1;
-    display: block;
+/* Columnas */
+footer.sitio-footer .footer-columna{
+    flex:1;
 }
 
-footer.sitio-footer .footer-columna h3 {
-    color: #1e293b;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 15px;
+/* Títulos */
+footer.sitio-footer .footer-columna h3{
+    color:#fbbf24;
+    font-size:18px;
+    margin-bottom:18px;
+    font-weight:700;
+    position:relative;
 }
 
-footer.sitio-footer .footer-columna ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+footer.sitio-footer .footer-columna h3::after{
+    content:"";
+    display:block;
+    width:45px;
+    height:3px;
+    background:#2563eb;
+    margin-top:8px;
+    border-radius:20px;
 }
 
-footer.sitio-footer .footer-columna ul li {
-    margin-bottom: 8px;
+/* Listas */
+footer.sitio-footer .footer-columna ul{
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 
-/* El display: block aquí es clave para que tome el max-width */
-footer.sitio-footer .footer-columna ul li a, 
-footer.sitio-footer .contacto-texto, 
-footer.sitio-footer .contacto-texto a {
-    color: #475569;
-    text-decoration: none;
-    font-size: 13px;
-    line-height: 1.5;
-    max-width: 100%; 
-    display: block; 
+footer.sitio-footer .footer-columna ul li{
+    margin-bottom:12px;
 }
 
-footer.sitio-footer .footer-columna ul li a:hover, 
-footer.sitio-footer .contacto-texto a:hover {
-    color: #b45309; 
-    text-decoration: underline;
+/* Enlaces y textos */
+footer.sitio-footer .footer-columna ul li a,
+footer.sitio-footer .contacto-texto,
+footer.sitio-footer .contacto-texto a{
+    color:#cbd5e1;
+    text-decoration:none;
+    font-size:14px;
+    transition:.3s;
+    display:block;
 }
 
-/* Barra inferior de créditos */
-footer.sitio-footer .footer-creditos {
-    max-width: 1100px;
-    margin: 35px auto 0 auto;
-    padding-top: 15px;
-    border-top: 1px solid #f1f5f9;
-    text-align: center;
+footer.sitio-footer .footer-columna ul li a:hover,
+footer.sitio-footer .contacto-texto a:hover{
+    color:#60a5fa;
+    padding-left:8px;
 }
 
-footer.sitio-footer .footer-creditos p {
-    margin: 0;
-    font-size: 11px;
-    color: #94a3b8;
-    max-width: 100%;
+/* Créditos */
+footer.sitio-footer .footer-creditos{
+    max-width:1200px;
+    margin:45px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+}
+
+footer.sitio-footer .footer-creditos p{
+    color:#94a3b8;
+    font-size:13px;
+    letter-spacing:.5px;
 }
